@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // pages 
 
 import Home from './router/Home.tsx';
+import Search from './components/Search.tsx';
 
 const router = createBrowserRouter([
   {
@@ -15,8 +16,8 @@ const router = createBrowserRouter([
     element: <App />,
     children:[
     {
-      path: "./",
-      element: <Home />, 
+      path: "/",
+      element: <Search />, 
     }
     ]
   }
